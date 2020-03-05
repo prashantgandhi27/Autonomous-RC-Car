@@ -1,0 +1,29 @@
+Conversion Warnings Log
+
+
+MSG_ID: 104 	MSG_TYPE: S 	MSG_NAME: SENSOR_NODE
+	SIG_NAME: LIDAR_Obstacle_FRONT, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: LIDAR_Obstacle_RIGHT, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: LIDAR_Obstacle_LEFT, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: LIDAR_Obstacle_BACK, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 105 	MSG_TYPE: S 	MSG_NAME: CAR_CONTROL
+	SIG_NAME: MOTOR_STEER_cmd, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 115 	MSG_TYPE: S 	MSG_NAME: SENSOR_DEBUG
+	SIG_NAME: IO_DEBUG_CAN_init, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: IO_DEBUG_sensor_init, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: IO_DEBUG_CAN_TX, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: IO_DEBUG_bus_off, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 116 	MSG_TYPE: S 	MSG_NAME: MOTOR_DEBUG
+	SIG_NAME: IO_DEBUG_CAN_init, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: IO_DEBUG_bus_off, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 117 	MSG_TYPE: S 	MSG_NAME: MASTER_DEBUG
+	SIG_NAME: IO_DEBUG_CAN_init, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: IO_DEBUG_bus_off, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: IO_DEBUG_drive_mode, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+BA_DEF_DEF_ " "  : Match not Found in Param List
+BA_DEF_DEF_ " "  : Match not Found in Param List
+BA_DEF_DEF_ " 0;"  : Match not Found in Param List

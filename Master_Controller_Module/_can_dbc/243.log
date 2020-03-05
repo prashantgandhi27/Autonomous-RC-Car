@@ -1,0 +1,9 @@
+Conversion Warnings Log
+
+
+MSG_ID: 105 	MSG_TYPE: S 	MSG_NAME: CAR_CONTROL
+	SIG_NAME: MOTOR_DRIVE_cmd, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: MOTOR_STEER_cmd, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+BA_DEF_DEF_ " "  : Match not Found in Param List
+BA_DEF_DEF_ " "  : Match not Found in Param List
+BA_DEF_DEF_ " 0;"  : Match not Found in Param List

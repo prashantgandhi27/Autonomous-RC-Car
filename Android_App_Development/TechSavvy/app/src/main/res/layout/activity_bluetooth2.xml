@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:title="@string/title_bt"
+    tools:context=".Bluetooth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_bt"
+            layout="@layout/toolbar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Status:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bluetoothStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/checkboxLED1"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.9"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="&lt;Bluetooth Status>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Motor Drive CMD :"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/motor_drive_rx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt; Drive Command >" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Motor Steer CMD :"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/motor_steer_rx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt; Steer Command >" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="RPM : "
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/rpm_rx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;RPM>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Obstacle Front :"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/obsFront_rx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;Front>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Obstacle Right :"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/obsRight_rx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;Right>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Obstacle Left :"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/obsLeft_rx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;Left>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Obstacle Back :"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/obsBack_rx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;Back>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Latitude: "
+                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lat_rx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="&lt;Latitude>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Longitude: "
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/long_rx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;Longitude>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Distance GPS: "
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Distance_GPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;distance>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="Compass: "
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/compass_rx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="&lt;Bearing>" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/start"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/colorDark"
+            android:checked="false"
+            android:text="START" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/map_margin"
+            android:onClick="mapButtonOnClick"
+            android:background="@android:color/holo_red_light"
+            android:text="@string/map_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorDark"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="   TECH-SAVVY   "
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        />
+</android.support.constraint.ConstraintLayout>

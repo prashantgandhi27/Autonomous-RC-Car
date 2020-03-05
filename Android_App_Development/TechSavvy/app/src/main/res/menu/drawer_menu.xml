@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Bluetooth">
+        <menu>
+            <item
+                android:id="@+id/bt_func"
+                android:icon="@drawable/bt_icon"
+                android:title="Bluetooth Configuration"></item>
+        </menu>
+    </item>
+</menu>
